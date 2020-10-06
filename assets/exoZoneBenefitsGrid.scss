@@ -1,0 +1,41 @@
+$textCenter :center;
+$borderStyle :solid ; 
+$paddind20 : 20% ;
+$margin8 : 8%;  
+
+h1{
+    text-align: $textCenter;
+}
+
+.contenaire{
+    display: inline-flex;
+    margin: 5%;
+}
+
+.item1{
+    border-style: $borderStyle;
+    padding: $paddind20;
+    margin: $margin8;
+    img{
+        height:90px;
+        width: 80px;    
+    }
+}
+
+.item2{
+    border-style: $borderStyle;
+    padding: $paddind20 ;
+    margin: $margin8;
+}
+
+.item3{
+    border-style: $borderStyle;
+    padding: $paddind20 ;
+    margin: $margin8;
+}
+
+.item4{
+    border-style: $borderStyle;
+    padding: $paddind20 ;
+    margin: $margin8;
+}
