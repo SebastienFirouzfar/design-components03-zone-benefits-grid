@@ -3,36 +3,78 @@ h1 {
 }
 
 .contenaire {
-  display: inline-flex;
-  margin: 5%;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: repeat(4, 20%);
+  margin-left: 25px;
+  margin-right: 50px;
+  padding: 10px;
+  grid-gap: 10px;
 }
 
 .item1 {
   border-style: solid;
-  padding: 20%;
-  margin: 8%;
+  padding: 5%;
 }
 .item1 img {
   height: 90px;
   width: 80px;
+  position: relative;
+  left: 30%;
 }
 
 .item2 {
   border-style: solid;
-  padding: 20%;
-  margin: 8%;
+  padding: 5%;
+}
+.item2 img {
+  height: 90px;
+  width: 80px;
+  position: relative;
+  left: 30%;
 }
 
 .item3 {
   border-style: solid;
-  padding: 20%;
-  margin: 8%;
+  padding: 5%;
+}
+.item3 img {
+  height: 90px;
+  width: 80px;
+  position: relative;
+  left: 30%;
 }
 
 .item4 {
   border-style: solid;
-  padding: 20%;
-  margin: 8%;
+  padding: 5%;
+}
+.item4 img {
+  height: 90px;
+  width: 80px;
+  position: relative;
+  left: 30%;
+}
+
+@media screen and (max-width: 768px) {
+  .item1 {
+    width: 180%;
+  }
+
+  .item2 {
+    grid-row: 2/3;
+    width: 180%;
+  }
+
+  .item3 {
+    grid-row: 3/3;
+    width: 180%;
+  }
+
+  .item4 {
+    grid-row: 4/4;
+    width: 180%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,41 +1,90 @@
 $textCenter :center;
 $borderStyle :solid ; 
-$paddind20 : 20% ;
+$paddind5 : 5% ;
 $margin8 : 8%;  
+$sizeImgHeight :90px ; 
+$sizeImgWidth :80px; 
+$positionImg :relative;
+$positionLeftImg :30%;   
 
 h1{
     text-align: $textCenter;
 }
 
+
+
 .contenaire{
-    display: inline-flex;
-    margin: 5%;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(4, 20%);
+    margin-left:25px;
+    margin-right:50px;
+    padding: 10px;
+    grid-gap: 10px;
 }
 
 .item1{
     border-style: $borderStyle;
-    padding: $paddind20;
-    margin: $margin8;
+    padding: $paddind5;
     img{
-        height:90px;
-        width: 80px;    
+        height:$sizeImgHeight;
+        width: $sizeImgWidth;  
+        position: $positionImg;
+        left: $positionLeftImg;  
     }
 }
 
 .item2{
     border-style: $borderStyle;
-    padding: $paddind20 ;
-    margin: $margin8;
+    padding: $paddind5 ;
+    img{
+        height:$sizeImgHeight;
+        width: $sizeImgWidth;
+        position: $positionImg;
+        left: $positionLeftImg;     
+    }
 }
+
 
 .item3{
     border-style: $borderStyle;
-    padding: $paddind20 ;
-    margin: $margin8;
+    padding: $paddind5 ;
+    img{
+        height:$sizeImgHeight;
+        width: $sizeImgWidth;
+        position: $positionImg;
+        left: $positionLeftImg; 
+    }
 }
 
 .item4{
     border-style: $borderStyle;
-    padding: $paddind20 ;
-    margin: $margin8;
+    padding: $paddind5;
+    img{
+        height:$sizeImgHeight;
+        width: $sizeImgWidth;
+        position: $positionImg;
+        left: $positionLeftImg; 
+    } 
+}
+
+@media screen and (max-width: 768px){
+    .item1{
+        width: 180%;
+    }
+    
+    .item2{
+        grid-row: 2/3;
+        width: 180%;
+    }
+
+    .item3{
+        grid-row: 3/3;
+        width: 180%;
+    }
+
+    .item4{
+        grid-row: 4/4;
+        width: 180%;
+    }
 }
