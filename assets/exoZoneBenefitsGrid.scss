@@ -20,7 +20,7 @@ h1{
     margin-right:50px;
     padding: 10px;
     grid-gap: 10px;
-    .item1{
+    .item{
         padding: $paddind5;
         img{
             height:$sizeImgHeight;
@@ -30,60 +30,22 @@ h1{
         }
     }
     
-    .item2{
-        padding: $paddind5 ;
-        img{
-            height:$sizeImgHeight;
-            width: $sizeImgWidth;
-            position: $positionImg;
-            left: $positionLeftImg;     
-        }
-    }
-    
-    
-    .item3{
-        padding: $paddind5 ;
-        img{
-            height:$sizeImgHeight;
-            width: $sizeImgWidth;
-            position: $positionImg;
-            left: $positionLeftImg; 
-        }
-    }
-    
-    .item4{
-        padding: $paddind5;
-        img{
-            height:$sizeImgHeight;
-            width: $sizeImgWidth;
-            position: $positionImg;
-            left: $positionLeftImg; 
-        } 
-    }
 }
 
 
 
 @media screen and (max-width: 768px){
-    .item1{
+    .item{
         grid-column: 1/4;
     }
 
-    .item2{
-        grid-row: 2/3;
-        /*width: 200%;*/
-        grid-column: 1/4;
-    }
-
-    .item3{
-        grid-row: 3/4;
-        /*width: 200%;*/
-        grid-column: 1/4;
-    }
-
-    .item4{
-        grid-row: 4/5;
-        grid-column: 1/4;
-       /*width: 200%;*/
+    .contenaire{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        .item img{
+            position: $positionImg;
+            left: 0;
+        }
     }
 }
